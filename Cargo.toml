@@ -8,7 +8,7 @@ repository = "https://github.com/LuukBlankenstijn/toml-file-refs"
 readme = "README.md"
 keywords = ["toml", "config", "secrets", "file", "serde"]
 categories = ["config"]
-exclude = ["flake.nix", "flake.lock", "rust-toolchain.toml", ".envrc"]
+exclude = ["flake.nix", "flake.lock", "rust-toolchain.toml", ".envrc", ".github"]
 
 [dependencies]
 serde = { version = "1.0.229", features = ["derive"] }
