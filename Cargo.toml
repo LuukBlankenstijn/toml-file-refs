@@ -1,0 +1,20 @@
+[package]
+name = "toml-file-refs"
+version = "0.1.0"
+edition = "2024"
+description = "Load TOML config with serde, resolving `*_file` keys to the contents of the referenced files"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/LuukBlankenstijn/toml-file-refs"
+readme = "README.md"
+keywords = ["toml", "config", "secrets", "file", "serde"]
+categories = ["config"]
+exclude = ["flake.nix", "flake.lock", "rust-toolchain.toml", ".envrc"]
+
+[dependencies]
+serde = { version = "1.0.229", features = ["derive"] }
+serde_path_to_error = "0.1.20"
+thiserror = "2.0.20"
+toml = { version = "1.1.6", features = ["preserve_order"] }
+
+[dev-dependencies]
+tempfile = "3.27.0"
